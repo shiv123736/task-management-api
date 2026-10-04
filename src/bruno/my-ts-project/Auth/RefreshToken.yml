@@ -1,0 +1,21 @@
+info:
+  name: RefreshToken
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:3000/api/v1/auth/refresh
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE3OTExMDI4OTc3ODYiLCJ1c2VybmFtZSI6InRlc3R1c2VyIiwiZW1haWwiOiJ0ZXN0dXNlcjFAZXhhbXBsZS5jb20iLCJyb2xlIjoidXNlciIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3OTExMDI5MDEsImV4cCI6MTc5MTEwMzgwMX0.kVtNZUEXw2-ds3gy6-6_jhs8nFmsuuo7gCXA-8PrxRI
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",                  // Target modern JavaScript
+    "module": "NodeNext",                // Standard for modern Node.js
+    "rootDir": "./src",                  // Where you write your TS code
+    "outDir": "./dist",                  // Where compiled JS code goes
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,             // Better compatibility with JS modules
+    "strict": true,                      // Enable strict type checking
+    "skipLibCheck": true,                 // Skip type checking of declaration files
+    "types": [],
+    // For nodejs:
+    // "lib": ["esnext"],
+    // "types": ["node"],
+    // and npm install -D @types/node
+
+    // Other Outputs
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    // Stricter Typechecking Options
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // Style Options
+    // "noImplicitReturns": true,
+    // "noImplicitOverride": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    // "noFallthroughCasesInSwitch": true,
+    // "noPropertyAccessFromIndexSignature": true,
+
+    // Recommended Options
+    "jsx": "react-jsx",
+    "verbatimModuleSyntax": false,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+  }
+}

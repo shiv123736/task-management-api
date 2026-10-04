@@ -1,0 +1,26 @@
+info:
+  name: add task
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:3000/api/v1/tasks/
+  body:
+    type: json
+    data: |-
+      {
+        "title": "Prepare sprint demo",
+        "priority": "high",
+        "status": "completed",
+        "teamId": "2",
+        "assignedTo": "2",
+        "dueDate": "2026-10-01T10:00:00Z"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,28 @@
+info:
+  name: See all tasks
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:3000/api/v1/tasks/?page=1&limit=10&status=completed
+  headers:
+    - name: authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE3OTExMDI4OTc3ODYiLCJ1c2VybmFtZSI6InRlc3R1c2VyIiwiZW1haWwiOiJ0ZXN0dXNlcjFAZXhhbXBsZS5jb20iLCJyb2xlIjoidXNlciIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3OTExMDI5MDEsImV4cCI6MTc5MTEwMzgwMX0.kVtNZUEXw2-ds3gy6-6_jhs8nFmsuuo7gCXA-8PrxRI
+  params:
+    - name: page
+      value: "1"
+      type: query
+    - name: limit
+      value: "10"
+      type: query
+    - name: status
+      value: completed
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

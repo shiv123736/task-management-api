@@ -1,0 +1,18 @@
+info:
+  name: Logout
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:3000/api/v1/auth/logout
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE3OTExMDc4NDQ1MDAiLCJ1c2VybmFtZSI6InRlc3R1c2VyIiwiZW1haWwiOiJ0ZXN0dXNlcjFAZXhhbXBsZS5jb20iLCJyb2xlIjoidXNlciIsInR5cGUiOiJyZWZyZXNoIiwiaWF0IjoxNzkxMTA3ODQ3LCJleHAiOjE3OTE3MTI2NDd9.7Pe_FSPibda65Mm2WYm367IXo8WaOaM4bEgBYBXRZ7c
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

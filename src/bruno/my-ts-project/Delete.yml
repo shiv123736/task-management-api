@@ -1,0 +1,21 @@
+info:
+  name: Delete
+  type: http
+  seq: 1
+
+http:
+  method: DELETE
+  url: http://localhost:3000/api/v1/tasks/1
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjE3OTEwMzk3MDkzNzYiLCJ1c2VybmFtZSI6InRlc3R1c2VyIiwiZW1haWwiOiJ0ZXN0dXNlcjFAZXhhbXBsZS5jb20iLCJyb2xlIjoidXNlciIsImlhdCI6MTc5MTAzOTcxMywiZXhwIjoxNzkxMDQzMzEzfQ.AHobNDlcXz-67afhwQnyN4Yk1Hbh7SDZdrfngriJXs4
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
